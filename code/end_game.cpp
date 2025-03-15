@@ -17,6 +17,6 @@ void end_game(){
     std::cout << "Grazie per aver giocato!" <<std::endl;
     std::cout << "Questo progetto è stato realizzato in una settimana quindi spero vi sia piaciuto,\n"
                 << "per ogni report di bug o altro siete pregati di comunicarcelo!" <<std::endl;
-    std::cout << "Game Dev: Nicolas Jaider" <<std::endl;
+    std::cout << "Game Dev: d3R!4J" <<std::endl;
     wait2();
 }
