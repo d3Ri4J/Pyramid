@@ -8,7 +8,7 @@ int getFinal(){
     int temp = 0;
     int sum = 0;
     
-    std::string fileNames[] = {"code/endings/normal.txt", "code/endings/bad.txt", "code/endings/good.txt", "code/endings/lost.txt", "code/endings/death.txt"};
+    std::string fileNames[] = {"code/saves/normal.txt", "code/saves/bad.txt", "code/saves/good.txt", "code/saves/lost.txt", "code/saves/death.txt"};
 
     for(const std::string& fileName : fileNames){
         std::fstream file;
@@ -124,7 +124,7 @@ int delete_saves(){
 }
 int wipe_data(){
 
-    std::string fileNames[] = {"code/endings/normal.txt", "code/endings/bad.txt", "code/endings/good.txt", "code/endings/lost.txt", "code/endings/death.txt"};
+    std::string fileNames[] = {"code/saves/normal.txt", "code/saves/bad.txt", "code/saves/good.txt", "code/saves/lost.txt", "code/saves/death.txt"};
 
     for(const std::string& fileName : fileNames){
         std::fstream wipe;
@@ -177,7 +177,7 @@ void printUnlockedFinals(){
     int temp = 0;
     int sum = 0;
     
-    std::string finalsFiles[] = {"code/endings/normal.txt", "code/endings/bad.txt", "code/endings/good.txt", "code/endings/lost.txt", "code/endings/death.txt"};
+    std::string finalsFiles[] = {"code/saves/normal.txt", "code/saves/bad.txt", "code/saves/good.txt", "code/saves/lost.txt", "code/saves/death.txt"};
     std::string finals[] = {"Normale:  ", "Buono:    ", "Peggiore: ", "Perduto:  ", "Morto:    "};
     std::string finals2[] = {"???????:  ", "?????:    ", "????????: ", "???????:  ", "?????:    "};
     std::string status[] = {"Completato", "Incompletato"};

@@ -10,25 +10,25 @@ void saveFinal(int ending){
 
     switch(ending){
         case 1:
-            final.open("code/endings/bad.txt", std::ios::out);
+            final.open("code/saves/bad.txt", std::ios::out);
             final << 1;
             break;
         case 2:
-            final.open("code/endings/good.txt", std::ios::out);
+            final.open("code/saves/good.txt", std::ios::out);
             final << 1;
             break;
 
         case 3:
-            final.open("code/endings/normal.txt", std::ios::out);
+            final.open("code/saves/normal.txt", std::ios::out);
             final << 1;
             break;
 
         case 4:
-            final.open("code/endings/death.txt", std::ios::out);
+            final.open("code/saves/death.txt", std::ios::out);
             final << 1;
             break;
         case 5:
-            final.open("code/endings/lost.txt", std::ios::out);
+            final.open("code/saves/lost.txt", std::ios::out);
             final << 1;
             break;
         default:
@@ -42,7 +42,7 @@ int getFinals(){
     int temp = 0;
     int sum = 0;
     
-    std::string fileNames[] = {"code/endings/normal.txt", "code/endings/bad.txt", "code/endings/good.txt", "code/endings/lost.txt", "code/endings/death.txt"};
+    std::string fileNames[] = {"code/saves/normal.txt", "code/saves/bad.txt", "code/saves/good.txt", "code/saves/lost.txt", "code/saves/death.txt"};
 
     for(const std::string& fileName : fileNames){
         std::fstream file;
@@ -156,7 +156,7 @@ void endings::ending2(){//good ending
 }
 void endings::ending3(){//bad ending
     
-    std::cout << "Ciao? Hai completato il finale peggiore possibile (senza morire),\n"
+    std::cout << "Ciao? Hai completato il finale peggiore possibile (senza morire o perderti),\n"
               << "mi sa che ti serve un corso di sopravvivenza...\n"
               << "Ora prova a trovare i restanti ;)" <<std::endl;
     std::cout << "[FINALE CATTIVO]" <<std::endl;
