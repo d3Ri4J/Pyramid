@@ -1,3 +1,4 @@
+#include "languages\languages.hpp"
 #include "header\game.hpp"
 #include "header\errors.hpp"
 #include <chrono>
@@ -10,9 +11,9 @@ void choices::c1(){
     int choice;
 
     do{
-        std::cout << "Ti stai adentrando e inizia a diventare buio quindi decidi di:" <<std::endl;
-        std::cout << "1. Accendere una torcia\n"
-                  << "2. Continuare nell'oscurità" <<std::endl;
+        std::cout << taskText_1 <<std::endl;
+        std::cout << "1. " << choiceText_1 << '\n'
+                  << "2. " << choiceText_2 <<std::endl;
 
         std::cin >> choice; 
         clearCin();
@@ -26,9 +27,9 @@ void choices::c2(){
     int choice;
 
     do{
-        std::cout << "Hai trovato un vaso, vuoi aprirlo?" <<std::endl;
-        std::cout << "1. Apri il vaso\n"
-                  << "2. Continua per la strada" <<std::endl;
+        std::cout << taskText_2 <<std::endl;
+        std::cout << "1. " << choiceText_3 << '\n'
+                  << "2. " << choiceText_4 <<std::endl;
 
         std::cin >> choice;
         clearCin();
@@ -42,9 +43,9 @@ void choices::c3(){
     int choice;
 
     do{
-        std::cout << "Hai incontrato un percorso pieno di trappole e devi capire come poter passare, scegli di:" <<std::endl;
-        std::cout << "1. Lanciare dei detriti che trovi a terra per far scattar le trappole\n"
-                  << "2. Chiudi gli occhi e corri sperando che non ti becchi alcuna trappola" <<std::endl;
+        std::cout << taskText_3 <<std::endl;
+        std::cout << "1. " << choiceText_5 << '\n'
+                  << "2. " << choiceText_6 <<std::endl;
 
         std::cin >> choice;
         clearCin();
@@ -58,9 +59,9 @@ void choices::c4(){
     int choice;
 
     do{
-        std::cout << "Trovi un muro strano, vuoi investigare?" <<std::endl;
-        std::cout << "1. Investiga\n"
-                  << "2. Continua ad esplorare" <<std::endl;
+        std::cout << taskText_4 <<std::endl;
+        std::cout << "1. " << choiceText_7 << '\n'
+                  << "2. " << choiceText_8 <<std::endl;
 
         std::cin >> choice;
         clearCin();
@@ -74,9 +75,9 @@ void choices::c5(){
     int choice;
 
     do{
-        std::cout << "Trovi dietro a un mattone del muro una provetta con del liquido all'interno:" <<std::endl;
-        std::cout << "1. Bevilo\n"
-                  << "2. Lascialo lì e procedi" <<std::endl;
+        std::cout << taskText_5 <<std::endl;
+        std::cout << "1. " << choiceText_9 << '\n'
+                  << "2. " << choiceText_10 <<std::endl;
 
         std::cin >> choice;
         clearCin();
@@ -94,9 +95,9 @@ void choices::c6(){
         do{
             failed = false;
             
-            std::cout << "HAI 10 SECONDI! Un masso sta rotolando dietro di te e devi fuggire" <<std::endl;
-            std::cout << "1. Corri fino al primo angolo che trovi\n"
-                      << "2. Ti metti a toccare il muro provando a vedere se c'è un passaggio segreto" <<std::endl;
+            std::cout << taskText_6 <<std::endl;
+            std::cout << "1. " << choiceText_11 << '\n'
+                      << "2. " << choiceText_12 <<std::endl;
             auto start = std::chrono::system_clock::now();
 
             std::cin >> choice;
@@ -108,9 +109,9 @@ void choices::c6(){
 
             if(diff.count() > 10000){
                 system("cls");
-                std::cout << "Ci hai messo troppo e sei stato schiacciato" <<std::endl;
+                std::cout << tooLateText <<std::endl;
                 failed = true;
-                std::cout << "Preparati... ";
+                std::cout << getReadyText;
                 for(int i = 3; i > 0; i--){
                     std::this_thread::sleep_for(std::chrono::seconds(1));
                     std::cout << i << ' ';
@@ -128,9 +129,9 @@ void choices::c7(){
     int choice;
 
     do{
-        std::cout << "Trovi un tappeto steso a terra, vuoi alzarlo?" <<std::endl;
-        std::cout << "1. Si\n"
-                  << "2. No" <<std::endl;
+        std::cout << taskText_7 <<std::endl;
+        std::cout << "1. " << choiceText_13 << '\n'
+                  << "2. " << choiceText_14 <<std::endl;
         std::cin >> choice;
         clearCin();
 
@@ -143,9 +144,9 @@ void choices::c8(){
     int choice;
 
     do{
-        std::cout << "È una mappa! Vuoi consultarla?" <<std::endl;
-        std::cout << "1. Si\n"
-                  << "2. No" <<std::endl;
+        std::cout << taskText_8 <<std::endl;
+        std::cout << "1. " << choiceText_15 << '\n'
+                  << "2. " << choiceText_16 <<std::endl;
 
         std::cin >> choice;
         clearCin();
@@ -159,9 +160,9 @@ void choices::c9(){
     int choice;
 
     do{
-        std::cout << "Trovi l'uscita, cosa vuoi fare con il tappeto?" <<std::endl;
-        std::cout << "1. Lascia fuori il tappeto\n"
-                    << "2. Brucia il tappeto" <<std::endl;
+        std::cout << taskText_9 <<std::endl;
+        std::cout << "1. " << choiceText_17 << '\n'
+                  << "2. " << choiceText_18 <<std::endl;
 
         std::cin >> choice;
         clearCin();

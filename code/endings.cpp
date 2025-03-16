@@ -1,3 +1,4 @@
+#include "languages\languages.hpp"
 #include "header\game.hpp"
 #include "header\end.hpp"
 #include <fstream>
@@ -32,7 +33,7 @@ void saveFinal(int ending){
             final << 1;
             break;
         default:
-            std::cerr << "ERRORE NEL SALVATAGGIO DEL FINALE" <<std::endl;
+            std::cerr << savingFinalError <<std::endl;
             break;
     }
 
@@ -49,7 +50,7 @@ int getFinals(){
         file.open(fileName, std::ios::in);
 
         if(!file.is_open()){
-            std::cerr << "FILE NOT FOUND " << fileName <<std::endl;
+            std::cerr << fileNotFound << fileName <<std::endl;
             return -1;
         }else{
             file >> temp;
@@ -129,7 +130,7 @@ int endings::sort_ending(){
             ending5();
             break;
         default:
-            std::cerr << "SORTING ERROR" <<std::endl;
+            std::cerr << sortEndingError <<std::endl;
             break;
     }
     
@@ -137,39 +138,28 @@ int endings::sort_ending(){
     finali = getFinals();
 
     //finali sbloccati
-    std::cout << "Numero di finali sbloccati: " << finali << "/5" <<std::endl;
+    std::cout << unlockedFinalsText_2 << finali << "/5" <<std::endl;
 
     return 0;
 }
 
 void endings::ending1(){//basic ending
 
-    std::cout << "Complimenti! Hai completato il finale più semplice,\n"
-              << "ora prova a trovare i restanti ;)" <<std::endl;
-    std::cout << "[FINALE BASE]" <<std::endl;
+    std::cout << endingText_1 <<std::endl;
 }
 void endings::ending2(){//good ending
     
-    std::cout << "BRAVO! Hai completato il finale migliore,\n"
-              << "ora prova a trovare i restanti ;)" <<std::endl;
-    std::cout << "[FINALE BUONO]" <<std::endl;
+    std::cout << endingText_2 <<std::endl;
 }
 void endings::ending3(){//bad ending
     
-    std::cout << "Ciao? Hai completato il finale peggiore possibile (senza morire o perderti),\n"
-              << "mi sa che ti serve un corso di sopravvivenza...\n"
-              << "Ora prova a trovare i restanti ;)" <<std::endl;
-    std::cout << "[FINALE CATTIVO]" <<std::endl;
+    std::cout << endingText_3 <<std::endl;
 }
 void endings::ending4(){//death ending
 
-    std::cout << "Dato che il tuo piede ha una freccia conficcata al suo interno\n"
-              << "non sei riuscito a correre abbastanza velocemente ed il masso ti ha schiacciato." <<std::endl;
-    std::cout << "[FINALE MORTE]" <<std::endl;
+    std::cout << endingText_4 <<std::endl;
 }
 void endings::ending5(){//lost ending
 
-    std::cout << "Non hai voluto consultare il tappeto, era una mappa...\n"
-              << "Ora sei perso per sempre all'interno della piramide per sempre!" <<std::endl;
-    std::cout << "[FINALE PERDUTO]" <<std::endl;
+    std::cout << endingText_5 <<std::endl;
 }

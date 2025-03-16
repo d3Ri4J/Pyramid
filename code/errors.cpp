@@ -1,3 +1,4 @@
+#include "languages\languages.hpp"
 #include "header\errors.hpp"
 
 int clearCin(){
@@ -6,7 +7,7 @@ int clearCin(){
         std::cin.clear();
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         
-        std::cerr << "std::cin errore, input errato per il tipo di variabile assegnato";
+        std::cerr << cinClearError <<std::endl;
 
         return -1;
     }
@@ -17,7 +18,7 @@ int validChoice(int x){
 
     if(x != 1 && x != 2){
         system("cls");
-        std::cerr << "Scelta non valida";
+        std::cerr << invalidChoiceText;
 
         return 1;
     }

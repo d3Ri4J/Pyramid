@@ -1,9 +1,13 @@
+#include "languages\languages.hpp"
 #include "header\start.hpp"
 #include "header\game.hpp"
 #include <unistd.h>
 
 int main()
 {
+    //load the default language
+    lang_EN();
+
     while(true){
         do{
             //open menu
@@ -12,7 +16,7 @@ int main()
             //annulla lo start
             if(start == -1 || start == 3){
                 system("cls");
-                std::cout << "Alla prossima!" <<std::endl;
+                std::cout << seeYouNextTimeText <<std::endl;
                 sleep(2);
                 return 1;
             }
