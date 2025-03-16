@@ -27,6 +27,7 @@ int getFinal(){
 
     return sum;
 }
+int finals = getFinal();
 
 void wait__(){
     std::cout << "Premi ENTER per continuare..." <<std::endl;
@@ -56,7 +57,7 @@ void start_game(){
                     std::cout << i << ". Nuova partita" <<std::endl;
                     break;
                 case 2:
-                    std::cout << i << ". Continua" <<std::endl;
+                    std::cout << i << ". Continua - (" << finals << "/5)" <<std::endl;
                     break;
                 case 3:
                     std::cout << i << ". Opzioni" <<std::endl;
