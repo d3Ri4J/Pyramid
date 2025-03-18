@@ -15,11 +15,11 @@ void load_5();
 //load end_game
 void load_6();
 
-void lang_IT(){
+void lang_EN(){
 
-    seeYouNextTimeText = "Alla prossima!";
+    seeYouNextTimeText = "See you!";
 
-    waitText = "\nPremi ENTER per continuare...";
+    waitText = "\nPress ENTER to continue...";
 
     load_1();//start_game
     load_2();//game
@@ -29,115 +29,115 @@ void lang_IT(){
     load_6();//end_game
 }
 void load_1(){
-    mainMenu = "***** MENU PRINCIPALE *****";
-    optionMenu = "****** MENU OPZIONI ******";
+    mainMenu = "***** MAIN MENU *****";
+    optionMenu = "****** OPTION MENU ******";
 
-    mainText_1 = "Nuova partita";
-    mainText_2 = "Continua";
-    mainText_3 = "Opzioni";
-    mainText_4 = "Esci";
+    mainText_1 = "New Game";
+    mainText_2 = "Continue";
+    mainText_3 = "Options";
+    mainText_4 = "Quit";
 
-    mainMenuTextError = "ERRORE DEL MENU";
+    mainMenuTextError = "MAIN MENU ERROR";
 
-    newGameText = "Sei sicuro di voler cancellare i tuoi salvataggi?";
-    newGameChoice_1 = "Annulla";
-    newGameChoice_2 = "Conferma";
+    newGameText = "Are you sure you want to delete all your saves?";
+    newGameChoice_1 = "Cancel";
+    newGameChoice_2 = "Confirm";
 
-    noWipeErrorFound = "Salvataggi cancellati con successo!";
-    wipeErrorFound = "Errore nella cancellazione dei salvataggi!";
+    noWipeErrorFound = "Saves deleted successfully!";
+    wipeErrorFound = "AN error occurred when trying to delete saves!";
 
-    optionText_1 = "Torna al menu principale";
-    optionText_2 = "Vedi i finali sbloccati";
+    optionText_1 = "Return to main menu";
+    optionText_2 = "See finals unlocked";
 
-    optionMenuTextError = "Scelta non valida";
+    optionMenuTextError = "Invalid choice";
     
-    finals1[0] = "Normale:  "; finals2[0] = "???????:  ";
-    finals1[1] = "Buono:    "; finals2[1] = "?????:    ";
-    finals1[2] = "Peggiore: "; finals2[2] = "????????: ";
-    finals1[3] = "Perduto:  "; finals2[3] = "???????:  ";
-    finals1[4] = "Morto:    "; finals2[4] = "?????:    ";
+    finals1[0] = "Normal: "; finals2[0] = "??????:  ";
+    finals1[1] = "Good:   "; finals2[1] = "????:    ";
+    finals1[2] = "Bad:    "; finals2[2] = "???: ";
+    finals1[3] = "Lost:   "; finals2[3] = "????:  ";
+    finals1[4] = "Death:  "; finals2[4] = "?????:    ";
     
-    status[0] = "Completato";
-    status[1] = "Incompletato";
+    status[0] = "Completed";
+    status[1] = "Incomplete";
 
-    unlockedFinalsText_1 = "\nNumero di finali sbloccati: ";
+    unlockedFinalsText_1 = "\nNumber of finals unlocked: ";
 
-    waitText__ = "Premi ENTER per continuare...";
+    waitText__ = "Press ENTER to continue...";
 }
 void load_2(){
-    gameIntroduction = "Benvenuto!\nTi stai avvicinando in una piramide totalmente\ninesplorata e decidi di entrare...";
+    gameIntroduction = "Welcome!\nYou're approaching a completely unexplored\npyramid and decide to enter...";
 
-    gameText_1 = "Hai deciso di accendere una torcia per poter veder meglio!";
-    gameText_2 = "Hai deciso di continuare nell'oscurità, coraggioso...";
-    gameText_3 = "Hai aperto il vaso e un ragno ti ha morso, non sai se è velenoso...";
-    gameText_4 = "Hai deciso di non aprire il vaso e proseguire...";
-    gameText_5 = "Hai fatto scattare tutte le trappole!";
-    gameText_6 = " Ma resti stordito dal morso del ragno...";
-    gameText_7 = "Una freccia si è conficcata nel tuo piede destro, sei rallentato";
-    gameText_8 = "Bevi il siero e guarisci dal veleno del ragno!";
-    gameText_9 = "Hai trovato un siero contro il veleno di un ragno, ora sei immune";
-    gameText_10 = "Lasci lì la provetta con il dubbio se potesse essere utile";
-    gameText_11 = "Continui per il tuo percorso senza sapere cosa c'era nel muro...";
-    gameText_12 = "Per un pelo! Ora proseguiamo con cautela";
-    gameText_13 = "Hai trovato un passaggio segreto e sei riuscito a infilarti per un pelo al suo interno!";
-    gameText_14 = "Decidi di consultare la mappa e ti dirigi verso l'usicita...";
-    gameText_15 = "Non consulti la mappa e continui per la tua strada...";
-    gameText_16 = "Decidi di proseguire senza alzare il tappeto...";
-    gameText_17 = "Sei una persona gentile...";
-    gameText_18 = "Stronzo...";
+    gameText_1 = "You've decided to turn on a flashlight to see better!";
+    gameText_2 = "You decided to continue in the darkness, brave...";
+    gameText_3 = "You opened the vase and a spider bit you, you don't know if it's poisonous...";
+    gameText_4 = "You decided not to open the vase and continue...";
+    gameText_5 = "You've triggered all the traps!";
+    gameText_6 = " But you're still dazed from the spider bite...";
+    gameText_7 = "An arrow has lodged in your right foot, you've been slowed down.";
+    gameText_8 = "You drink the serum and are cured of the spider venom!";
+    gameText_9 = "You found a serum against spider venom, now you're immune.";
+    gameText_10 = "You leave the test tube there, wondering if it could be useful.";
+    gameText_11 = "You continue on your path, unaware of what was in the wall...";
+    gameText_12 = "That was close! Now, let's proceed with caution.";
+    gameText_13 = "You found a secret passage and managed to squeeze through it by a hair's breadth!";
+    gameText_14 = "You've decided to consult the map and head towards the exit...";
+    gameText_15 = "You've decided to ignore the map and continue...";
+    gameText_16 = "You've decided to continue without lifting the carpet...";
+    gameText_17 = "You are a good person...";
+    gameText_18 = "Asshole...";
 }
 void load_3(){
-    taskText_1 = "Ti stai adentrando e inizia a diventare buio quindi decidi di:";
-    taskText_2 = "Hai trovato un vaso, vuoi aprirlo?";
-    taskText_3 = "Hai incontrato un percorso pieno di trappole e devi capire come poter passare, scegli di:";
-    taskText_4 = "Trovi un muro strano, vuoi investigare?";
-    taskText_5 = "Trovi dietro a un mattone del muro una provetta con del liquido all'interno:";
-    taskText_6 = "HAI 10 SECONDI! Un masso sta rotolando dietro di te e devi fuggire!!";
-    taskText_7 = "Trovi un tappeto steso a terra, vuoi alzarlo?";
-    taskText_8 = "È una mappa! Vuoi consultarla?";
-    taskText_9 = "Trovi l'uscita, cosa vuoi fare con il tappeto?";
+    taskText_1 = "You're venturing deeper and it's starting to get dark, so you decide to:";
+    taskText_2 = "You found a vase, do you want to open it?";
+    taskText_3 = "You've encountered a path full of traps and you need to figure out how to get through, choose to:";
+    taskText_4 = "You find a strange wall, do you want to investigate?";
+    taskText_5 = "Behind a brick in the wall, you find a test tube with liquid inside:";
+    taskText_6 = "YOU HAVE 10 SECONDS! A boulder is rolling behind you and you have to escape!!";
+    taskText_7 = "You find a rug lying on the ground, do you want to lift it?";
+    taskText_8 = "It's a map! Do you want to consult it?";
+    taskText_9 = "You find the exit, what do you want to do with the rug?";
 
-    choiceText_1 = "Accendere una torcia";
-    choiceText_2 = "Continuare nell'oscurità";
-    choiceText_3 = "Apri il vaso";
-    choiceText_4 = "Continua per la strada";
-    choiceText_5 = "Lanciare dei detriti che trovi a terra per far scattar le trappole";
-    choiceText_6 = "Chiudi gli occhi e corri sperando che non ti becchi alcuna trappola";
-    choiceText_7 = "Investiga";
-    choiceText_8 = "Continua ad esplorare";
-    choiceText_9 = "Bevilo";
-    choiceText_10 = "Lascialo lì e procedi";
-    choiceText_11 = "Corri fino al primo angolo che trovi";
-    choiceText_12 = "Ti metti a toccare il muro provando a vedere se c'è un passaggio segreto";
-    choiceText_13 = "Si";
+    choiceText_1 = "Turn on a flashlight";
+    choiceText_2 = "Continue in the darkness";
+    choiceText_3 = "Open the vase";
+    choiceText_4 = "Continue down the path";
+    choiceText_5 = "Throw debris you find on the ground to trigger the traps";
+    choiceText_6 = "Close your eyes and run, hoping you don't get caught in any traps";
+    choiceText_7 = "Investigate";
+    choiceText_8 = "Continue to explore";
+    choiceText_9 = "Drink it";
+    choiceText_10 = "Leave it there and proceed";
+    choiceText_11 = "You run to the first corner you find";
+    choiceText_12 = "You start touching the wall, trying to see if there's a secret passage";
+    choiceText_13 = "Yes";
     choiceText_14 = "No";
-    choiceText_15 = "Si";
+    choiceText_15 = "Yes";
     choiceText_16 = "No";
-    choiceText_17 = "Lascia fuori il tappeto";
-    choiceText_18 = "Brucia il tappeto";
+    choiceText_17 = "Leave the carpet outside";
+    choiceText_18 = "Burn the carpet";
 
-    tooLateText = "Ci hai messo troppo e sei stato schiacciato";
-    getReadyText = "Preparati... ";
+    tooLateText = "You took too long and were crushed";
+    getReadyText = "Get ready... ";
 }
 void load_4(){
-    unlockedFinalsText_2 = "Numero di finali sbloccati: ";
+    unlockedFinalsText_2 = "Number of finals unlocked: ";
 
-    endingText_1 = "Complimenti! Hai completato il finale più semplice,\nora prova a trovare i restanti ;)\n[FINALE BASE]";
-    endingText_2 = "BRAVO! Hai completato il finale migliore,\nora prova a trovare i restanti ;)\n[FINALE BUONO]";
-    endingText_3 = "Ciao? Hai completato il finale peggiore possibile (senza morire o perderti),\nmi sa che ti serve un corso di sopravvivenza...\nOra prova a trovare i restanti ;)\n[FINALE CATTIVO]";
-    endingText_4 = "Dato che il tuo piede ha una freccia conficcata al suo interno\nquindi non sei riuscito a correre abbastanza velocemente ed il masso ti ha schiacciato.\n[FINALE MORTE]";
-    endingText_5 = "Non hai voluto consultare il tappeto, era una mappa...\nOra sei perso per sempre all'interno della piramide per sempre!\n[FINALE PERDUTO]";
+    endingText_1 = "You've completed the easiest ending,\nnow try find the other finals ;)\n[BASIC ENDING]";
+    endingText_2 = "BRAVO! You've completed the best ending,\nnow try find the other finals ;)\n[GOOD ENDING]";
+    endingText_3 = "Hello? You've completed the worst ending (without dying or getting lost),\ni think you'll need a some survival lessons...\nNow try find the other finals ;)\n[BAD ENDING]";
+    endingText_4 = "Since your foot has an arrow stuck in it,\nyou weren't able to run fast enough and the boulder crushed you.\n[DEATH ENDING]";
+    endingText_5 = "You choose to not pick up the carpet, it was a map...\nNow you're lost in the Piramid forever!\n[LOST ENDING]";
 }
 void load_5(){
-    sortEndingError = "ERRORE NEL SORTEGGIO DEL FINALE";
-    fileNotFound = "FILE NON TROVATO ";
-    savingFinalError = "ERRORE NEL SALVATAGGIO DEL FINALE";
-    cinClearError = "errore di std::cin , input errato per il tipo di variabile assegnato";
-    invalidChoiceText = "Scelta non valida";
+    sortEndingError = "SORTING ERROR FINAL";
+    fileNotFound = "FILE NOT FOUND ";
+    savingFinalError = "FINAL SAVING ERROR";
+    cinClearError = "std::cin error, input not valid for variable expected";
+    invalidChoiceText = "Invalid choice";
 }
 void load_6(){
-    waitText_ = "\nPremi ENTER per tornare al menu principale...";
+    waitText_ = "\nPress ENTER to return to the main menu...";
     
-    thanksForPlaying = "Grazie per aver giocato!\nQuesto è il mio primo progetto quindi spero vi sia piaciuto,\nper ogni report di bug o altro siete pregati di comunicarcelo!";
-    gameDev = "Programmatore del Gioco: ";
+    thanksForPlaying = "Thanks for Playing!\nThis is my first project so I hope you enjoyed,\nif you encounter some bugs please feel free to report them!";
+    gameDev = "Game Dev: ";
 }

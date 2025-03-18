@@ -78,7 +78,7 @@ void load_2(){
     gameText_11 = "Continui per il tuo percorso senza sapere cosa c'era nel muro...";
     gameText_12 = "Per un pelo! Ora proseguiamo con cautela";
     gameText_13 = "Hai trovato un passaggio segreto e sei riuscito a infilarti per un pelo al suo interno!";
-    gameText_14 = "Decidi di consultare la mappa e ti dirigi verso l'usicita...";
+    gameText_14 = "Decidi di consultare la mappa e ti dirigi verso l'uscita...";
     gameText_15 = "Non consulti la mappa e continui per la tua strada...";
     gameText_16 = "Decidi di proseguire senza alzare il tappeto...";
     gameText_17 = "Sei una persona gentile...";
@@ -123,19 +123,19 @@ void load_4(){
     endingText_1 = "Complimenti! Hai completato il finale più semplice,\nora prova a trovare i restanti ;)\n[FINALE BASE]";
     endingText_2 = "BRAVO! Hai completato il finale migliore,\nora prova a trovare i restanti ;)\n[FINALE BUONO]";
     endingText_3 = "Ciao? Hai completato il finale peggiore possibile (senza morire o perderti),\nmi sa che ti serve un corso di sopravvivenza...\nOra prova a trovare i restanti ;)\n[FINALE CATTIVO]";
-    endingText_4 = "Dato che il tuo piede ha una freccia conficcata al suo interno\nquindi non sei riuscito a correre abbastanza velocemente ed il masso ti ha schiacciato.\n[FINALE MORTE]";
+    endingText_4 = "Dato che il tuo piede ha una freccia conficcata al suo interno\nnon sei riuscito a correre abbastanza velocemente ed il masso ti ha schiacciato.\n[FINALE MORTE]";
     endingText_5 = "Non hai voluto consultare il tappeto, era una mappa...\nOra sei perso per sempre all'interno della piramide per sempre!\n[FINALE PERDUTO]";
 }
 void load_5(){
     sortEndingError = "ERRORE NEL SORTEGGIO DEL FINALE";
     fileNotFound = "FILE NON TROVATO ";
     savingFinalError = "ERRORE NEL SALVATAGGIO DEL FINALE";
-    cinClearError = "errore di std::cin , input errato per il tipo di variabile assegnato";
+    cinClearError = "errore di std::cin, input errato per il tipo di variabile assegnato";
     invalidChoiceText = "Scelta non valida";
 }
 void load_6(){
     waitText_ = "\nPremi ENTER per tornare al menu principale...";
     
-    thanksForPlaying = "Grazie per aver giocato!\nQuesto è il mio primo progetto quindi spero vi sia piaciuto,\nper ogni report di bug o altro siete pregati di comunicarcelo!";
+    thanksForPlaying = "Grazie per aver giocato!\nQuesto è il mio primo progetto quindi spero vi sia piaciuto,\nper ogni riscontro di bug o altro siete pregati di comunicarcelo!";
     gameDev = "Programmatore del Gioco: ";
 }
