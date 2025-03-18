@@ -1,19 +1,17 @@
-#include "languages.hpp"
-
-#include "languages.hpp"
+#include "languages\languages.hpp"
 
 //load start_game
-void load_1();
+void load__1();
 //load game
-void load_2();
+void load__2();
 //load choices
-void load_3();
+void load__3();
 //load endings
-void load_4();
+void load__4();
 //load errors
-void load_5();
+void load__5();
 //load end_game
-void load_6();
+void load__6();
 
 void lang_EN(){
 
@@ -21,14 +19,14 @@ void lang_EN(){
 
     waitText = "\nPress ENTER to continue...";
 
-    load_1();//start_game
-    load_2();//game
-    load_3();//choices
-    load_4();//endings
-    load_5();//errors
-    load_6();//end_game
+    load__1();//start_game
+    load__2();//game
+    load__3();//choices
+    load__4();//endings
+    load__5();//errors
+    load__6();//end_game
 }
-void load_1(){
+void load__1(){
     mainMenu = "***** MAIN MENU *****";
     optionMenu = "****** OPTION MENU ******";
 
@@ -49,13 +47,13 @@ void load_1(){
     optionText_1 = "Return to main menu";
     optionText_2 = "See finals unlocked";
 
-    optionMenuTextError = "Invalid choice";
+    optionMenuTextError = "Invalid choice\n";
     
-    finals1[0] = "Normal: "; finals2[0] = "??????:  ";
-    finals1[1] = "Good:   "; finals2[1] = "????:    ";
-    finals1[2] = "Bad:    "; finals2[2] = "???: ";
-    finals1[3] = "Lost:   "; finals2[3] = "????:  ";
-    finals1[4] = "Death:  "; finals2[4] = "?????:    ";
+    finals1[0] = "Normal: "; finals2[0] = "??????: ";
+    finals1[1] = "Good:   "; finals2[1] = "????:   ";
+    finals1[2] = "Bad:    "; finals2[2] = "???:    ";
+    finals1[3] = "Lost:   "; finals2[3] = "????:   ";
+    finals1[4] = "Death:  "; finals2[4] = "?????:  ";
     
     status[0] = "Completed";
     status[1] = "Incomplete";
@@ -64,7 +62,7 @@ void load_1(){
 
     waitText__ = "Press ENTER to continue...";
 }
-void load_2(){
+void load__2(){
     gameIntroduction = "Welcome!\nYou're approaching a completely unexplored\npyramid and decide to enter...";
 
     gameText_1 = "You've decided to turn on a flashlight to see better!";
@@ -86,7 +84,7 @@ void load_2(){
     gameText_17 = "You are a good person...";
     gameText_18 = "Asshole...";
 }
-void load_3(){
+void load__3(){
     taskText_1 = "You're venturing deeper and it's starting to get dark, so you decide to:";
     taskText_2 = "You found a vase, do you want to open it?";
     taskText_3 = "You've encountered a path full of traps and you need to figure out how to get through, choose to:";
@@ -119,7 +117,7 @@ void load_3(){
     tooLateText = "You took too long and were crushed";
     getReadyText = "Get ready... ";
 }
-void load_4(){
+void load__4(){
     unlockedFinalsText_2 = "Number of finals unlocked: ";
 
     endingText_1 = "You've completed the easiest ending,\nnow try find the other finals ;)\n[BASIC ENDING]";
@@ -128,14 +126,14 @@ void load_4(){
     endingText_4 = "Since your foot has an arrow stuck in it,\nyou weren't able to run fast enough and the boulder crushed you.\n[DEATH ENDING]";
     endingText_5 = "You choose to not pick up the carpet, it was a map...\nNow you're lost in the Piramid forever!\n[LOST ENDING]";
 }
-void load_5(){
+void load__5(){
     sortEndingError = "SORTING ERROR FINAL";
     fileNotFound = "FILE NOT FOUND ";
     savingFinalError = "FINAL SAVING ERROR";
     cinClearError = "std::cin error, input not valid for variable expected";
-    invalidChoiceText = "Invalid choice";
+    invalidChoiceText = "Invalid choice\n";
 }
-void load_6(){
+void load__6(){
     waitText_ = "\nPress ENTER to return to the main menu...";
     
     thanksForPlaying = "Thanks for Playing!\nThis is my first project so I hope you enjoyed,\nif you encounter some bugs please feel free to report them!";

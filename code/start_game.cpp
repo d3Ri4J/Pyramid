@@ -28,7 +28,6 @@ int getFinal(){
 
     return sum;
 }
-int finals = getFinal();
 
 void wait__(){
     std::cout << waitText__ <<std::endl;
@@ -39,6 +38,8 @@ int delete_saves();
 int wipe_data();
 
 int opzioni();
+
+void printUnlockedFinals();
 
 void start_game(){
 
@@ -54,7 +55,7 @@ void start_game(){
                     std::cout << i << ". " << mainText_1 <<std::endl;
                     break;
                 case 2:
-                    std::cout << i << ". " << mainText_2 << " - (" << finals << "/5)" <<std::endl;
+                    std::cout << i << ". " << mainText_2 << " - (" << getFinal() << "/5)" <<std::endl;
                     break;
                 case 3:
                     std::cout << i << ". " << mainText_3 <<std::endl;
@@ -79,7 +80,7 @@ void start_game(){
                 break;
             case 2:
                 //continua il gioco principale
-                start = 1;
+                start = 11;
                 break;
             case 3:
                 opzioni();
@@ -147,15 +148,15 @@ int opzioni(){
     do{
         system("cls");
         std::cout << optionMenu <<std::endl;
-        std::cout << "1. " << optionText_1 <<std::endl
-                  << "2. " << optionText_2 <<std::endl;
+        std::cout << "0. " << optionText_1 <<std::endl
+                  << "1. " << optionText_2 <<std::endl;
         std::cin >> choice;
         clearCin();
 
         switch(choice){
-            case 1:
+            case 0:
                 break;
-            case 2:
+            case 1:
                 printUnlockedFinals();
                 wait__();
                 break;

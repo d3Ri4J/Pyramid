@@ -5,8 +5,8 @@
 
 #include <string>
 //* languages:
-#include "lang_IT\IT_header.hpp"
-#include "lang_EN\EN_header.hpp"
+#include "IT_header.hpp"
+#include "EN_header.hpp"
 
 //! errors
 extern std::string fileNotFound;

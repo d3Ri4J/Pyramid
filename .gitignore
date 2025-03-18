@@ -1,1 +1,4 @@
 todo.md
+code/saves/
+*.txt
+/code/saves

@@ -1,4 +1,4 @@
-#include "languages.hpp"
+#include "languages\languages.hpp"
 
 //load start_game
 void load_1();
@@ -47,7 +47,7 @@ void load_1(){
     optionText_1 = "Torna al menu principale";
     optionText_2 = "Vedi i finali sbloccati";
 
-    optionMenuTextError = "Scelta non valida";
+    optionMenuTextError = "Scelta non valida\n";
     
     finals1[0] = "Normale:  "; finals2[0] = "???????:  ";
     finals1[1] = "Buono:    "; finals2[1] = "?????:    ";
@@ -131,7 +131,7 @@ void load_5(){
     fileNotFound = "FILE NON TROVATO ";
     savingFinalError = "ERRORE NEL SALVATAGGIO DEL FINALE";
     cinClearError = "errore di std::cin, input errato per il tipo di variabile assegnato";
-    invalidChoiceText = "Scelta non valida";
+    invalidChoiceText = "Scelta non valida\n";
 }
 void load_6(){
     waitText_ = "\nPremi ENTER per tornare al menu principale...";
