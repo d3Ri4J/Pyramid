@@ -46,6 +46,7 @@ void load_1(){
 
     optionText_1 = "Torna al menu principale";
     optionText_2 = "Vedi i finali sbloccati";
+    optionText_3 = "Cambia lingua";
 
     optionMenuTextError = "Scelta non valida\n";
     
@@ -59,6 +60,12 @@ void load_1(){
     status[1] = "Incompletato";
 
     unlockedFinalsText_1 = "\nNumero di finali sbloccati: ";
+
+    languageMenu = "***** CAMBIA LINGUA *****";
+    languageText_1 = "Italiano";
+    languageText_2 = "English";
+
+    languageError = "Errore nell'impostazione della lingua";
 
     waitText__ = "Premi ENTER per continuare...";
 }

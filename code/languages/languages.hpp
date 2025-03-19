@@ -39,6 +39,7 @@ extern std::string wipeErrorFound;
 //option menu choices
 extern std::string optionText_1;
 extern std::string optionText_2;
+extern std::string optionText_3;
 //option menu sorting error
 extern std::string optionMenuTextError;
 
@@ -50,6 +51,14 @@ extern std::string status[2];
 //finals unlocked
 extern std::string unlockedFinalsText_1;
 extern std::string unlockedFinalsText_2;
+
+//language menu
+extern std::string languageMenu;
+//language options
+extern std::string languageText_1;
+extern std::string languageText_2;
+//set lenguage error
+extern std::string languageError;
 
 //adios
 extern std::string seeYouNextTimeText;

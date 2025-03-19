@@ -38,8 +38,8 @@ int delete_saves();
 int wipe_data();
 
 int opzioni();
-
 void printUnlockedFinals();
+void setLanguage();
 
 void start_game(){
 
@@ -149,7 +149,8 @@ int opzioni(){
         system("cls");
         std::cout << optionMenu <<std::endl;
         std::cout << "0. " << optionText_1 <<std::endl
-                  << "1. " << optionText_2 <<std::endl;
+                  << "1. " << optionText_2 <<std::endl
+                  << "2. " << optionText_3 <<std::endl;
         std::cin >> choice;
         clearCin();
 
@@ -158,13 +159,16 @@ int opzioni(){
                 break;
             case 1:
                 printUnlockedFinals();
+                break;
+            case 2:
+                setLanguage();
                 wait__();
                 break;
             default:
                 std::cerr << optionMenuTextError <<std::endl;
                 sleep(2);
         }
-    }while(choice != 2);
+    }while(choice != 0);
 
     return 0;
 }
@@ -199,4 +203,28 @@ void printUnlockedFinals(){
         unlockedFinals.close();
     }
     std::cout << unlockedFinalsText_1 << sum << "/5" <<std::endl;
+}
+void setLanguage(){
+
+    int scelta;
+    
+    do{
+        system("cls");
+        std::cout << languageMenu <<std::endl;
+        std::cout << "1. " << languageText_1 <<std::endl;
+        std::cout << "2. " << languageText_2 <<std::endl;
+        std::cin >> scelta;
+    }while(scelta < 1 && scelta > 2);
+
+    switch(scelta){
+        case 1:
+            lang_IT();
+            break;
+        case 2:
+            lang_EN();
+            break;
+        default:
+            std::cerr << languageError <<std::endl;
+            break;
+    }
 }

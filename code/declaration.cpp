@@ -58,6 +58,7 @@ std::string wipeErrorFound;
 //option menu choices
 std::string optionText_1;
 std::string optionText_2;
+std::string optionText_3;
 //option menu sorting error
 std::string optionMenuTextError;
 
@@ -69,6 +70,14 @@ std::string status[2];
 //finals unlocked
 std::string unlockedFinalsText_1;
 std::string unlockedFinalsText_2;
+
+//language menu
+std::string languageMenu;
+//language options
+std::string languageText_1;
+std::string languageText_2;
+//set language error
+std::string languageError;
 
 //adios
 std::string seeYouNextTimeText;

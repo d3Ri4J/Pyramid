@@ -15,7 +15,7 @@ void load__6();
 
 void lang_EN(){
 
-    seeYouNextTimeText = "See you!";
+    seeYouNextTimeText = "See ya!";
 
     waitText = "\nPress ENTER to continue...";
 
@@ -46,6 +46,7 @@ void load__1(){
 
     optionText_1 = "Return to main menu";
     optionText_2 = "See finals unlocked";
+    optionText_3 = "Change language";
 
     optionMenuTextError = "Invalid choice\n";
     
@@ -59,6 +60,12 @@ void load__1(){
     status[1] = "Incomplete";
 
     unlockedFinalsText_1 = "\nNumber of finals unlocked: ";
+
+    languageMenu = "***** CHANGE LANGUAGE *****";
+    languageText_1 = "Italiano";
+    languageText_2 = "English";
+
+    languageError = "Language change failed";
 
     waitText__ = "Press ENTER to continue...";
 }
