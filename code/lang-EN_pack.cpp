@@ -47,6 +47,7 @@ void load__1(){
     optionText_1 = "Return to main menu";
     optionText_2 = "See finals unlocked";
     optionText_3 = "Change language";
+    optionText_4 = "Delete saves";
 
     optionMenuTextError = "Invalid choice\n";
     

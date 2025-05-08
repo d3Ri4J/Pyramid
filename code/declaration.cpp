@@ -59,6 +59,7 @@ std::string wipeErrorFound;
 std::string optionText_1;
 std::string optionText_2;
 std::string optionText_3;
+std::string optionText_4;
 //option menu sorting error
 std::string optionMenuTextError;
 

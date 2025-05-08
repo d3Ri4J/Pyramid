@@ -40,6 +40,7 @@ extern std::string wipeErrorFound;
 extern std::string optionText_1;
 extern std::string optionText_2;
 extern std::string optionText_3;
+extern std::string optionText_4;
 //option menu sorting error
 extern std::string optionMenuTextError;
 

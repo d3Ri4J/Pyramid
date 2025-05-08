@@ -47,6 +47,7 @@ void load_1(){
     optionText_1 = "Torna al menu principale";
     optionText_2 = "Vedi i finali sbloccati";
     optionText_3 = "Cambia lingua";
+    optionText_4 = "Cancella salvataggi";
 
     optionMenuTextError = "Scelta non valida\n";
     

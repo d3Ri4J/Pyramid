@@ -150,7 +150,8 @@ int opzioni(){
         std::cout << optionMenu <<std::endl;
         std::cout << "0. " << optionText_1 <<std::endl
                   << "1. " << optionText_2 <<std::endl
-                  << "2. " << optionText_3 <<std::endl;
+                  << "2. " << optionText_3 <<std::endl
+                  << "3. " << optionText_4 <<std::endl;
         std::cin >> choice;
         clearCin();
 
@@ -159,10 +160,14 @@ int opzioni(){
                 break;
             case 1:
                 printUnlockedFinals();
+                wait__();
                 break;
             case 2:
                 setLanguage();
                 wait__();
+                break;
+            case 3:
+                delete_saves();
                 break;
             default:
                 std::cerr << optionMenuTextError <<std::endl;
