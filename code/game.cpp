@@ -140,6 +140,6 @@ int game(){
         wait(0);
     }
     //! DEBUG PURPOSE ONLY
-    // std::cout << sortedNumber <<std::endl;
+    std::cout << sortedNumber <<std::endl;
     return true;
 }

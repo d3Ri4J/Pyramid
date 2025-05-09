@@ -135,7 +135,7 @@ void load__4(){
     endingText_5 = "You choose to not pick up the carpet, it was a map...\nNow you're lost in the Piramid forever!\n[LOST ENDING]";
 }
 void load__5(){
-    sortEndingError = "SORTING ERROR FINAL";
+    sortEndingError = "ERROR: FINAL SORTING";
     fileNotFound = "FILE NOT FOUND ";
     savingFinalError = "FINAL SAVING ERROR";
     cinClearError = "std::cin error, input not valid for variable expected";

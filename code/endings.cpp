@@ -70,25 +70,11 @@ void sort(int *x){
         *x = 5;
     }else{
         //bad ending
-        if(*a == 2 && *b == 1){
-            if(*c == 2 && *d == 2){
-                if(*e == 2 && *f == 2){
-                    if(*i == 2){
-                        //*returns the number to sort after
-                        *x = 1;
-                    }
-                }
-            }
+        if(*a == 2 && *b == 1 && *c == 2 && *d == 2 && *e == 2 && *f == 2 && *i == 2){
+            *x = 1;
         }//good ending
-        else if(*a == 1 && *b == 2){
-            if(*c == 1 && *d == 1){
-                if(*e == 1 && *g == 1){
-                    if(*h == 1 && *i == 1){
-                        //*returns the number to sort after
-                        *x = 2;
-                    }
-                }
-            }
+        else if(*a == 1 && *b == 2 && *c == 1 && *d == 1 && *e == 1 && *g == 1 && *h == 1 && *i == 1){
+            *x = 2;
         }//basic ending
         else{
             //*returns the number to sort after
@@ -133,7 +119,7 @@ int endings::sort_ending(){
             std::cerr << sortEndingError <<std::endl;
             break;
     }
-    
+
     //founds the finals unlocked
     finali = getFinals();
 
