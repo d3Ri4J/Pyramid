@@ -11,3 +11,9 @@ file(GLOB SOURCES "code/*.cpp")
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}")
 
 add_executable(pyramid ${SOURCES})
+
+if(MSVC)
+
+else()
+    target_link_options(pyramid PRIVATE -static -static-libgcc -static-libstdc++)
+endif()
